@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+<!--    指定父工程-->
+    <parent>
+        <groupId>com.powernode</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+<!--groupId 和 version 和父工程一致 无需指定-->
+    <artifactId>son</artifactId>
+    <packaging>jar</packaging>
+
+    <name>son</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+
+<!--   也能自己指定依赖版本         <version>4.12</version>-->
+<!--            子工程无需指定version-->
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
